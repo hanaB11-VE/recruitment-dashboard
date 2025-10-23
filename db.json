@@ -1,0 +1,22 @@
+{
+  "logs": [
+    {
+      "id": 1,
+      "timestamp": "2025-10-20T10:15:00Z",
+      "user": "Alice",
+      "action": "Rejected candidate John Doe"
+    },
+    {
+      "id": 2,
+      "timestamp": "2025-10-21T09:00:00Z",
+      "user": "Bob",
+      "action": "Scheduled interview for Sarah"
+    },
+    {
+      "id": 3,
+      "timestamp": "2025-10-22T13:45:00Z",
+      "user": "Alice",
+      "action": "Hired candidate Mark"
+    }
+  ]
+}

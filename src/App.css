@@ -1,0 +1,124 @@
+/* ---------- Base Layout ---------- */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  width: 100vw;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  margin-left: 80px;
+  margin-right: 80px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.app-main {
+  padding: 24px 16px;
+  margin-left: 160px;
+  margin-right: 160px
+
+}
+
+/* ---------- Toggle Button ---------- */
+.toggle-btn {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ---------- Light Theme ---------- */
+.light {
+  --bg-color: #f9fafb;
+  --text-color: #111;
+  --header-bg: #ffffff;
+  --border-color: #e0e0e0;
+  --btn-bg: #111;
+  --btn-text: #fff;
+}
+
+.light {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.light .app-header {
+  background-color: var(--header-bg);
+  border-color: var(--border-color);
+}
+
+.light .toggle-btn {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+}
+
+/* ---------- Dark Theme ---------- */
+.dark {
+  --bg-color: #121212;
+  --text-color: #dfcfcf;
+  --header-bg: #1a1616;
+  --border-color: #333;
+  --btn-bg: #272424;
+  --btn-text: #a89d9d;
+}
+
+.dark {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.dark .app-header {
+  background-color: var(--header-bg);
+  border-color: var(--border-color);
+}
+
+.dark .toggle-btn {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+}
+ @media (max-width: 768px) {
+  .app-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .toggle-btn {
+    align-self: flex-end;
+  }
+
+  .app-main {
+    padding: 12px;
+  }
+
+  .app-main > * {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Extra-small screens (tiny phones) */
+@media (max-width: 480px) {
+  .toggle-btn {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+}
