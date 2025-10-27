@@ -12,11 +12,12 @@ function App() {
   const toggleDarkMode = () => setDarkMode(!darkMode);
 
   return (
-    <div className={`app ${darkMode ? 'dark' : 'light'}`}>
+    //<div className={`app ${darkMode ? 'dark' : 'light'}`}>
+    <div className={ darkMode ? 'dark' : 'light'}>
       <header className="app-header">
         <h1>Recruitment Monitoring Dashboard</h1>
         <button onClick={toggleDarkMode} className="toggle-btn">
-          {darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
+           {darkMode ? ' ☀️ Light Mode' : '🌙 Dark Mode'}
         </button>
       </header>
 

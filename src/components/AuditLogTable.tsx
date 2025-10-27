@@ -20,8 +20,8 @@ const AuditLogTable: React.FC = () => {
 
   // Fetch data on component mount
   useEffect(() => {
-    //axios.get('http://localhost:3001/logs')
-    axios.get('https://my-json-server.typicode.com/hanaB11-VE/recruitment-dashboard/logs')
+    axios.get('http://localhost:3001/logs')
+   // axios.get('https://my-json-server.typicode.com/hanaB11-VE/recruitment-dashboard/logs')
 
       .then(response => {
         setLogs(response.data);
